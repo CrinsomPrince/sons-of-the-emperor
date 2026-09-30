@@ -1,3 +1,6 @@
+const BASE = import.meta.env.BASE_URL;
+
+
 export function inicio(conteudo) {
 
     conteudo.innerHTML = `
@@ -9,7 +12,7 @@ export function inicio(conteudo) {
             </h2>
 
             <img
-                src="./img/logo.png"
+                src="${BASE}img/logo.png"
                 alt="Logo da ONG Sons Of The Emperor"
             >
 
@@ -44,7 +47,7 @@ export function inicio(conteudo) {
                 </p>
 
                 <img
-                    src="./img/doacao.png"
+                    src="${BASE}img/doacao.png"
                     alt="Voluntários da ONG Sons Of The Emperor ajudando a comunidade"
                 >
 
@@ -56,13 +59,16 @@ export function inicio(conteudo) {
 }
 
 
+
 export function projetos(conteudo) {
 
     conteudo.innerHTML = `
 
         <section class="inicio">
 
-            <h2>Nossos Projetos</h2>
+            <h2>
+                Nossos Projetos
+            </h2>
 
             <p>
                 Conheça as principais ações da
@@ -71,7 +77,7 @@ export function projetos(conteudo) {
             </p>
 
             <img
-                src="./img/acao.png"
+                src="${BASE}img/acao.png"
                 alt="Ação social realizada pela ONG"
             >
 
@@ -82,13 +88,18 @@ export function projetos(conteudo) {
 
             <div class="container">
 
-                <h2>Projetos da ONG</h2>
+                <h2>
+                    Projetos da ONG
+                </h2>
 
                 <div class="projetos">
 
+
                     <article class="projeto">
 
-                        <h3>Alimentação</h3>
+                        <h3>
+                            Alimentação
+                        </h3>
 
                         <p>
                             Nosso projeto de alimentação busca
@@ -107,7 +118,9 @@ export function projetos(conteudo) {
 
                     <article class="projeto">
 
-                        <h3>Educação</h3>
+                        <h3>
+                            Educação
+                        </h3>
 
                         <p>
                             Trabalhamos para proporcionar
@@ -126,7 +139,9 @@ export function projetos(conteudo) {
 
                     <article class="projeto">
 
-                        <h3>Apoio Social</h3>
+                        <h3>
+                            Apoio Social
+                        </h3>
 
                         <p>
                             Nosso objetivo é oferecer apoio
@@ -142,6 +157,7 @@ export function projetos(conteudo) {
 
                     </article>
 
+
                 </div>
 
             </div>
@@ -155,7 +171,9 @@ export function projetos(conteudo) {
 
                 <div class="doacoes-conteudo">
 
-                    <h2>Faça uma Doação</h2>
+                    <h2>
+                        Faça uma Doação
+                    </h2>
 
                     <p>
                         As doações são muito importantes
