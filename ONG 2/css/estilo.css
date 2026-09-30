@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Arial, sans-serif;
+    background: #f36464;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* MENU */
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ACESSIBILIDADE */
+
+.acessibilidade {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.acessibilidade button {
+    width: auto;
+    margin-top: 0;
+    padding: 8px 14px;
+    background: #fff;
+    color: #0e0d0d;
+    border: 1px solid #020202;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.acessibilidade button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.acessibilidade button:focus {
+    outline: 3px solid #ffeb3b;
+    outline-offset: 2px;
+}
+
+/* TAMANHO DO TEXTO */
+
+body.texto-grande {
+    font-size: 20px;
+}
+
+body.texto-grande header h1 {
+    font-size: 34px;
+}
+
+body.texto-grande .inicio h2 {
+    font-size: 48px;
+}
+
+body.texto-grande .inicio p {
+    font-size: 22px;
+}
+
+body.texto-grande section h2 {
+    font-size: 32px;
+}
+
+body.texto-grande .projeto h3 {
+    font-size: 24px;
+}
+
+body.texto-grande .projeto p,
+body.texto-grande .projeto li,
+body.texto-grande .doacoes-conteudo p,
+body.texto-grande .voluntariado-conteudo p,
+body.texto-grande footer p {
+    font-size: 20px;
+}
+
+body.texto-muito-grande {
+    font-size: 24px;
+}
+
+body.texto-muito-grande header h1 {
+    font-size: 40px;
+}
+
+body.texto-muito-grande .inicio h2 {
+    font-size: 56px;
+}
+
+body.texto-muito-grande .inicio p {
+    font-size: 26px;
+}
+
+body.texto-muito-grande section h2 {
+    font-size: 38px;
+}
+
+body.texto-muito-grande .projeto h3 {
+    font-size: 28px;
+}
+
+body.texto-muito-grande .projeto p,
+body.texto-muito-grande .projeto li,
+body.texto-muito-grande .doacoes-conteudo p,
+body.texto-muito-grande .voluntariado-conteudo p,
+body.texto-muito-grande footer p {
+    font-size: 24px;
+}
+
+/* SEÇÕES */
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+/* INÍCIO */
+
+.inicio {
+    text-align: center;
+    background: #e8f5e9;
+    padding: 80px 20px;
+}
+
+.inicio h2 {
+    font-size: 40px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.inicio img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* SOBRE */
+
+.sobre {
+    background: #fff;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.sobre img {
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto 0;
+    display: block;
+    border-radius: 8px;
+}
+
+/* PROJETOS */
+
+.projetos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto h3 {
+    color: #020202;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    margin-bottom: 15px;
+}
+
+.projeto ul {
+    margin-left: 20px;
+}
+
+.projeto li {
+    margin-bottom: 8px;
+}
+
+/* DOAÇÕES */
+
+.doacoes {
+    background: #fff;
+}
+
+.doacoes-conteudo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.doacoes-conteudo p {
+    margin-bottom: 20px;
+}
+
+/* VOLUNTARIADO */
+
+.voluntariado {
+    background: #f36464;
+}
+
+.voluntariado-conteudo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.voluntariado-conteudo p {
+    margin-bottom: 20px;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background: #000;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .acessibilidade {
+        justify-content: center;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .projeto {
+        width: 100%;
+    }
+}
+
+/* FORMULÁRIO DE CADASTRO */
+
+.cadastro {
+    padding: 50px 20px;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+fieldset {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    background: #000;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid red;
+}
+
+input:valid,
+select:valid {
+    border-color: green;
+}
+
+input:invalid:not(:placeholder-shown),
+select:invalid {
+    border-color: red;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+}
+
+.linha .campo {
+    flex: 1;
+}
+
+/* BOTÃO DO FORMULÁRIO */
+
+form .botao {
+    width: 100%;
+    padding: 14px;
+    background: red;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form .botao:hover {
+    background: #000;
+}
+
+
+/* FORMULÁRIO NO CELULAR */
+
+@media (max-width: 700px) {
+
+    .linha {
+        display: block;
+    }
+
+}
