@@ -9,7 +9,7 @@ export function inicio(conteudo) {
             </h2>
 
             <img
-                src="img/logo.png"
+                src="./img/logo.png"
                 alt="Logo da ONG Sons Of The Emperor"
             >
 
@@ -44,7 +44,7 @@ export function inicio(conteudo) {
                 </p>
 
                 <img
-                    src="img/doacao.png"
+                    src="./img/doacao.png"
                     alt="Voluntários da ONG Sons Of The Emperor ajudando a comunidade"
                 >
 
@@ -71,7 +71,7 @@ export function projetos(conteudo) {
             </p>
 
             <img
-                src="img/acao.png"
+                src="./img/acao.png"
                 alt="Ação social realizada pela ONG"
             >
 
